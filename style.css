@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    color: #F5E8E4;
+}
+
+h1 {
+    font-size: 72px;
+    font-family: 'Manufacturing Consent', cursive;
+    color: #630000;
+}
+
+
+#citationTexte {
+    font-size: 30px;
+    color: #040303;
+    font-family: 'Amarante', cursive;
+    max-width: 100%;
+    padding: 20px;
+}
+
+#citationAuteur {
+    font-size: 25px;
+    color: #810000;
+    padding: 20px;
+    font-family: 'Pinyon Script', cursive;
+}
+
+button {
+    font-size: 17px;
+    padding: 10px;
+    background-color: #630000;
+    color: #EEEBDD;
+    border: #090910;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: 'Manufacturing Consent', cursive;
+}
