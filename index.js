@@ -2,9 +2,12 @@ const citationTexte = document.getElementById("citationTexte");
 const citationAuteur = document.getElementById("citationAuteur");
 const nouvelleCitation = document.getElementById("nouvelleCitation");
 
+let currentIndex = 0;
+
 citationTexte.addEventListener("animationend", () => {
     citationTexte.classList.remove("animate__animated", "animate__fadeIn");
     nouvelleCitation.disabled = false;
+    nouvelleCitation.style.cursor = "pointer";
 });
 
 const quotes = [
@@ -33,23 +36,25 @@ const quotes = [
 
 
 function randomQuote() {
-    const indexAleatoire = getRandomIndex(citationTexte.dataset.index);
+    const indexAleatoire = getRandomIndex();
     const selectedQuote = quotes[indexAleatoire];
     citationTexte.textContent = selectedQuote.texte;
     citationAuteur.textContent = selectedQuote.auteur;
 
-    // Reset animation
+    // Animate the quote text
     citationTexte.classList.add("animate__animated", "animate__fadeIn");
     nouvelleCitation.disabled = true;
+    nouvelleCitation.style.cursor = "not-allowed";
 }
 
-function getRandomIndex(currentIndex) {
+function getRandomIndex() {
     let newIndex;
 
     // boucle pour s'assurer que le nouvel index est différent de l'index actuel
     do {
         newIndex = Math.floor(Math.random() * quotes.length);
     } while (newIndex === currentIndex);
+    currentIndex = newIndex;
     return newIndex;
 }
 
