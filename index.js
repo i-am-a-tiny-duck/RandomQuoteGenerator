@@ -12,27 +12,46 @@ citationTexte.addEventListener("animationend", () => {
 
 const quotes = [
     {
-        texte: "Burge$$ un jour, Burge$$ toujours.", auteur: "Axolotl"
+        texte: "Burge$$ un jour, Burge$$ toujours.",
+        auteur: "Axolotl",
     },
     {
-        texte: "It's time to bubububububurge$$", auteur: "Axolotl"
+        texte: "It's time to bubububububurge$$",
+        auteur: "Axolotl",
     },
     {
-        texte: "Quand le lion chante, les poules cries", auteur: "Un sage"
+        texte: "Quand le lion chante, les poules cries",
+        auteur: "Un sage",
     },
     {
-        texte: "Si j'exiiiiste, si j'exiiiiste. C'est d'être faaaan, c'est d'être faaaan !", auteur: "Pascal Obistro"
+        texte: "Si j'exiiiiste, si j'exiiiiste. C'est d'être faaaan, c'est d'être faaaan !",
+        auteur: "Pascal Obistro",
     },
     {
-        texte: "Crazy hair, don't care 💅💁‍♀️", auteur: "Jessica, 45 years old"
+        texte: "Crazy hair, don't care 💅💁‍♀️",
+        auteur: "Jessica, 45 years old",
     },
     {
-        texte: "Sensoriellement, c'est pas ouf", auteur: "Pupuce"
+        texte: "Sensoriellement, c'est pas ouf",
+        auteur: "Pupuce",
     },
     {
-        texte: "Ca dépend tu vas à combien de miles par heure ?", auteur: "Un philosophe"
+        texte: "Ca dépend tu vas à combien de miles par heure ?",
+        auteur: "Un philosophe",
+    },
+    {
+        texte: "Je suis un peu comme un oignon, j'ai des couches.",
+        auteur: "Shrek",
+    },
+    {
+        texte: "Quand la lione se dresse, le lion se couche.",
+        auteur: "Un intellectuel anonyme",
+    },
+    {
+        texte: "Quand le lama s'agite, le dauphin applaudit. 🐬",
+        auteur: "Une chanteuse émérite",
     }
-]
+];
 
 
 function randomQuote() {
@@ -44,7 +63,7 @@ function randomQuote() {
     // Animate the quote text
     citationTexte.classList.add("animate__animated", "animate__fadeIn");
     nouvelleCitation.disabled = true;
-    nouvelleCitation.style.cursor = "not-allowed";
+    nouvelleCitation.style.cursor = "wait";
 }
 
 function getRandomIndex() {

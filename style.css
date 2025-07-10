@@ -13,10 +13,8 @@ body {
 
 h1 {
     font-size: 72px;
-    font-family: 'Manufacturing Consent', cursive;
     color: #630000;
 }
-
 
 #citationTexte {
     font-size: 30px;
@@ -41,5 +39,14 @@ button {
     border: #090910;
     border-radius: 7px;
     cursor: pointer;
+    transition: box-shadow 250ms ease-in-out;
+}
+
+button:hover {
+    box-shadow: 0 0 10px #2c0000;
+}
+
+h1,
+button {
     font-family: 'Manufacturing Consent', cursive;
 }
