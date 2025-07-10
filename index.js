@@ -39,6 +39,18 @@ const quotes = [
         texte: "Ca dépend tu vas à combien de miles par heure ?",
         auteur: "Un philosophe",
     },
+    {
+        texte: "Je suis un peu comme un oignon, j'ai des couches.",
+        auteur: "Shrek",
+    },
+    {
+        texte: "Quand la lione se dresse, le lion se couche.",
+        auteur: "Un intellectuel anonyme",
+    },
+    {
+        texte: "Quand le lama s'agite, le dauphin applaudit. 🐬",
+        auteur: "Une chanteuse émérite",
+    }
 ];
 
 
